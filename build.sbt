@@ -1,8 +1,8 @@
-organization := "org.eintr.loglady"
+organization := "com.metamx"
 
 name := "loglady"
 
-version := "1.1.0"
+version := "1.1.0-mmx"
 
 description := "Crazy simple logging API for Scala."
 
@@ -73,3 +73,6 @@ pomExtra := (
 
 //LsKeys.site in LsKeys.lsync := "http://github.com/dln/loglady/"
 
+releaseSettings
+
+ReleaseKeys.publishArtifactsAction := PgpKeys.publishSigned.value
