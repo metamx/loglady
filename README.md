@@ -24,7 +24,7 @@ Main Features
  * Thin slf4j wrapper 
  * Simple API
  * No configuration
- * Supports Scala 2.9.1, 2.9.2 and 2.10.0
+ * Supports Scala 2.10.x, 2.11.x and 2.12.x
 
 
 Usage Example

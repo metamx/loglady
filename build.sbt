@@ -8,9 +8,9 @@ description := "Crazy simple logging API for Scala."
 
 licenses := Seq("Apache License, Version 2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0.txt"))
 
-scalaVersion := "2.9.2"
+scalaVersion := "2.10.6"
 
-crossScalaVersions := Seq("2.9.1", "2.9.2", "2.10.4", "2.11.7")
+crossScalaVersions := Seq("2.10.6", "2.11.8", "2.12.1")
 
 libraryDependencies ++= Seq(
   "org.slf4j"      %  "slf4j-api"       % "1.7.2",
@@ -23,8 +23,8 @@ libraryDependencies <++= scalaVersion {
     "org.specs2"     %% "specs2"          % "1.12.3" % "test"
   )
   case _ => Seq(
-    "org.specs2"     %% "specs2-core"     % "3.6.3"  % "test",
-    "org.specs2"     %% "specs2-junit"    % "3.6.3"  % "test"
+    "org.specs2"     %% "specs2-core"     % "3.8.5"  % "test",
+    "org.specs2"     %% "specs2-junit"    % "3.8.5"  % "test"
   )
 }
 
@@ -64,14 +64,6 @@ pomExtra := (
       <url>http://eintr.org/</url>
     </developer>
   </developers>)
-
-//seq(lsSettings :_*)
-
-//LsKeys.tags in LsKeys.lsync := Seq("log", "logging", "slf4j")
-
-//externalResolvers in LsKeys.lsync := Nil
-
-//LsKeys.site in LsKeys.lsync := "http://github.com/dln/loglady/"
 
 releaseSettings
 
